@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-monitor"
+version = "1.0.0"
+description = "Public webpage change monitor with history and JSON reports"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+web-monitor = "webmonitor.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
