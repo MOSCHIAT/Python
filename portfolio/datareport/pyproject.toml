@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datareport"
+version = "1.0.0"
+description = "CSV analysis and report generator"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+datareport = "datareport.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
